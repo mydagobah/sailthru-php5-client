@@ -1,3 +1,6 @@
+## 1.2.2 (Aug 26th, 2016)
+  - Added curl error info in client Exception if no response received from server
+
 ## 1.2.1 (May 11th, 2016)
   - Fix typo, make tests pass
 
