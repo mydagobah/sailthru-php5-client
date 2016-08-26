@@ -1433,7 +1433,7 @@ class Sailthru_Client {
         curl_setopt($ch, CURLOPT_HTTPHEADER, $this->httpHeaders);
         $response = curl_exec($ch);
         $this->lastResponseInfo = curl_getinfo($ch);
-        if (!$data) {
+        if (!$response) {
             throw new Sailthru_Client_Exception("Bad response received from $url: " . curl_error($ch));
         }
         curl_close($ch);
